@@ -6,7 +6,7 @@ interface Props {
 }
 
 const Todo = ({todo, handleCheck}: Props) => (
-    <li className="p-1">
+    <li className="py-2">
         <label className="flex gap-1">
             <input type="checkbox" checked={todo.checked} onChange={(e) => handleCheck(e, todo)} />
             <span className={`${todo.checked && 'line-through'}`}>{todo.content}</span>
